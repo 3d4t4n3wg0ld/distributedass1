@@ -18,3 +18,11 @@ data_load_state = st.text('Loading data...')
 data = load_data(10000)
 # Notify the reader that the data was successfully loaded.
 data_load_state.text("Done! (using st.cache)")
+genre = st.radio(
+    "What's your favorite movie genre",
+    ('Comedy', 'Drama', 'Documentary'))
+
+if genre == 'Comedy':
+    st.write('You selected comedy.')
+else:
+    st.write("You didn't select comedy.")
