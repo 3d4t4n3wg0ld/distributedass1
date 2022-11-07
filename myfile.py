@@ -33,3 +33,6 @@ appointment = st.slider(
     "Schedule your appointment:",
     value=(time(11, 30), time(12, 45)))
 st.write("You're scheduled for:", appointment)
+
+color = st.color_picker('Pick A Color', '#00f900')
+st.write('The current color is', color)
